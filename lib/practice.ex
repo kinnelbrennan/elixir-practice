@@ -24,6 +24,6 @@ defmodule Practice do
 
   # TODO: Add a palindrome? function.
   def palindrome?(x) do
-    String.reverse(x) == x
+    String.reverse(String.downcase(x)) == String.downcase(x)
   end
 end

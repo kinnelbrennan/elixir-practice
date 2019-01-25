@@ -23,17 +23,17 @@
     <h2>Prime Factors</h2>
 
     <%= form_for @conn, "/factor", fn f -> %>
-      <p>Enter number: <%= text_input f, :x %></p>
+      <p>Enter number: <%= text_input f, :x, placeholder: "1729" %></p>
       <p><%= submit "Factor It" %></p>
     <% end %>
   </div>
   <div class="column">
     <h2>Palindrome?</h2>
-    <%= form_for @conn, "/palindrome?", fn f -> %>
+    <%= form_for @conn, "/palindrome", fn f -> %>
 
-      <p>Enter word: <%= text_input f, :x %></p>
+      <p>Enter word: <%= text_input f, :x,
+      placeholder: "Able was I ere I saw Elba" %></p>
       <p><%= submit "Test it" %></p>
     <% end %>
   </div>
 </div>
-
