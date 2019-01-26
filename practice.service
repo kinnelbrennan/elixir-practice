@@ -10,7 +10,7 @@ Environment=MIX_ENV=prod "PORT=4791"
 Environment=LANG=en_US.UTF-8
 
 WorkingDirectory=/home/bkinnel/elixir-practice
-ExecStart=/home/bkinnel/elixir-practice.sh
+ExecStart=/home/bkinnel/elixir-practice/start.sh
 
 [Install]
 WantedBy=multi-user.target
