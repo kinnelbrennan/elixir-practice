@@ -27,6 +27,6 @@ defmodule Practice.Factor do
 	end
 
 	def factor(n) do
-		inspect(getFactors(parse_int(n), []))
+		getFactors(n, [])
 	end
 end

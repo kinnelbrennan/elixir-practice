@@ -4,6 +4,10 @@
     <h2>Factor Results</h2>
 
     <p>Original Number = <%= @x %></p>
-    <p>Factors = <%= @y %></p>
+    <p>Prime Factorization =
+    <%= for item <- @y do %>
+      <%= item %>,
+    <% end %>
+  </p>
   </div>
 </div>
