@@ -1,0 +1,16 @@
+[Unit]
+Description=Elixir Practice
+
+[Service]
+Type=simple
+User=bkinnel
+Group=bkinnel
+Restart=on-failure
+Environment=MIX_ENV=prod "PORT=4791"
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/bkinnel/elixir-practice
+ExecStart=/home/bkinnel/elixir-practice.sh
+
+[Install]
+WantedBy=multi-user.target
